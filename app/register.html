@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script type="module" src="./JS/index.js"></script>
+    <script type="module" src="./JS/register.js"></script>
+    <script type="module" src="./JS/localstorage.js"></script>
+    <script type="module" src="./JS/connection.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <nav id="container-navbar-desktop">
+        <a href=""><img id="logo" src="/assets/logo.png" alt=""></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="./men.html">Coupe / Barbe</a></li>
+            <li><a href="#">Tarifs</a></li>
+        </ul>
+        <div>
+            <a href=""><svg id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg></a>                  
+        </div>
+    </nav>
+    <nav id="container-navbar-mobile">
+        <a href="./index.html"><img id="logo" src="/assets/logo.png" alt=""></a>
+        <div id="nav-links">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="#">Coupe / Barbe</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="./register.html">Mon compte</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div id="return">
+        <svg id="arrow-return" width="30px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+        <p>Retour en arrière</p>
+    </div>
+    <div id="container-page-register">
+        <h1>Créer mon compte</h1>
+        <h2>Remplissez ce formulaire pour créer votre compte</h2>
+        <form id="form-register" action="" type="POST">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <span class="error" id="prenomError"></span>
+            
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" placeholder="Nom de famille">
+            <span class="error" id="nomError"></span>
+
+            <label for="email">Email *</label>
+            <input type="text" id="email" placeholder="Email">
+            <span class="error" id="mailError"></span>
+
+            <label for="num-tel">Téléphone *</label>
+            <input type="text" id="num-tel" placeholder="07 ** ** ** **">
+            <span class="error" id="telError"></span>
+
+            <label for="mdp">Mot de passe *</label>
+            <input type="password" id="mdp" placeholder="Mot de passe robuste">
+            <span class="error" id="passwordError"></span>
+
+            <button id="createAccountBtn" type="submit">Créer mon compte</button>
+        </form>
+    </div>
+</body>
+</html>
